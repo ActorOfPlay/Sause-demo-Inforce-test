@@ -1,0 +1,23 @@
+{
+  "name": "sause-demo-inforce-test",
+  "version": "1.0.0",
+  "description": "Test-task Bohdan Hrytsiuk",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ActorOfPlay/Sause-demo-Inforce-test.git"
+  },
+  "author": "Bohdan Hrytsiuk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ActorOfPlay/Sause-demo-Inforce-test/issues"
+  },
+  "homepage": "https://github.com/ActorOfPlay/Sause-demo-Inforce-test#readme",
+  "devDependencies": {
+    "@faker-js/faker": "^8.0.2",
+    "cypress": "^12.17.3"
+  }
+}
