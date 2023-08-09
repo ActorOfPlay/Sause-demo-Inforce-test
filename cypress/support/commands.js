@@ -180,7 +180,7 @@ Cypress.Commands.add('clickTheFinishButton', () => {
 });
 
 Cypress.Commands.add('assertOrderIsCompleted', (completedOrderText) => {
-  cy.get('[class="complete-header"]')
+  return cy.get('[class="complete-header"]')
     .should('contain.text', completedOrderText);
 });
 

@@ -25,7 +25,7 @@ describe('User should', () => {
     cy.assertItemsTitle('@itemsDetails');
   });
 
-  it('be redirected to populated Checkout page after clicking the [Checkout]', () => {
+  it('be redirected to prefilled Checkout page after clicking the [Checkout]', () => {
     cy.AddItemsToCart(2);
 
     cy.clickTheShoppingCartIcon();
@@ -64,7 +64,7 @@ describe('User should', () => {
 
     cy.clickTheFinishButton();
 
-    cy.assertOrderIsComleted(completedOrderText);
+    cy.assertOrderIsCompleted(completedOrderText);
   });
 
   it('be able to logout after proceeding with the order', () => {
