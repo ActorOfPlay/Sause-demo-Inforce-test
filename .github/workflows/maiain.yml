@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
-        uses: actions/checkout@v3
+        uses: freeedcom/ai-codereviewer@v2.6.0
 
       - name: AI Code Reviewer
         uses: ActorOfPlay/ai-codereviewer@main
