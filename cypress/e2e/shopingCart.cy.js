@@ -6,13 +6,13 @@ describe('User should', () => {
   beforeEach('Setting cookies', () => {
     cy.visit('/');
     cy.LoginToSauce('standard_user', 'secret_sauce');
-    cy.clearLocalStorage();
+    cy.clelStorage();
   });
 
   it('be able to add multiple items to cart', () => {
     cy.AddItemsToCart(2).as('itemsDetails');
 
-    cy.asserTooltipItemsNumber('@itemsDetails');
+    cy.asse'@itemsDetails');
   });
 
   it('be proceed to checkout with the correct number and titles of items', () => {
