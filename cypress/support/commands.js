@@ -15,13 +15,13 @@ Cypress.Commands.add('asserTheUsernameIsVisible', () => {
     .should('be.visible');
 });
 
-Cypress.Commands.add('populateTheUsernameField', (username) => {
+Cypress.CommanateTheUsernameField', (username) => {
   cy.get('[data-test="username"]')
     .type(username);
 });
 
 Cypress.Commands.add('populateThePasswordField', (password) => {
-  cy.get('[data-test="password"]')
+  cy.get('[st="password"]')
     .type(password);
 });
 
