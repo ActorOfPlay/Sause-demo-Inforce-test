@@ -12,12 +12,12 @@ describe('Login page', () => {
 
     cy.assertThePageTitle('Swag Labs');
 
-    cy.assertThePasswordFieldIfvisible();
+    cy.assertThePasible();
 
     cy.asserTheUsernameIsVisible();
   });
 
-  it('should authentificate user if credentials are valid', () => {
+  it('should autheser if credentials are valid', () => {
     cy.populateTheUsernameField('standard_user');
 
     cy.populateThePasswordField('secret_sauce');
