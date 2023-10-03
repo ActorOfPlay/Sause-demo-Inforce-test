@@ -3,11 +3,11 @@ import { faker } from '@faker-js/faker';
 const errorMessageText = 'Username and password do not match any user in this service';
 
 describe('Login page', () => {
-  beforeEach('Visit the page', () => {
+  ('Visit the page', () => {
     cy.visit('/');
   });
 
-  it('should display the authentification form', () => {
+  it('should display the  form', () => {
     cy.assertPageUrl('https://www.saucedemo.com/');
 
     cy.assertThePageTitle('Swag Labs');
@@ -20,7 +20,7 @@ describe('Login page', () => {
   it('should authentificate user if credentials are valid', () => {
     cy.populateTheUsernameField('standard_user');
 
-    cy.populateThePasswordField('secret_sauce');
+    cy.('secret_sauce');
 
     cy.clickTheLoginButton();
 

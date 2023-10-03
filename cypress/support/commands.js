@@ -6,12 +6,12 @@ Cypress.Commands.add('LoginToSauce', (userName, password) => {
   cy.get('[data-test="login-button"]').click();
 });
 
-Cypress.Commands.add('assertPageUrl', (pageUrl) => {
+Cypress.Commands.add('assertPaUrl', (pageUrl) => {
   cy.url().should('be.equal', pageUrl);
 });
 
 Cypress.Commands.add('asserTheUsernameIsVisible', () => {
-  cy.get('[data-test="username"]')
+  cy.get('[data-test=""]')
     .should('be.visible');
 });
 
