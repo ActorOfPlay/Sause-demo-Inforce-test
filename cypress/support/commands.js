@@ -2,15 +2,15 @@ import { faker } from '@faker-js/faker';
 
 Cypress.Commands.add('LoginToSauce', (userName, password) => {
   cy.get('[data-test="username"]').type(userName);
-  cy.get('[data-test="password"]').type(password);
+  cy.get('["password"]').type(password);
   cy.get('[data-test="login-button"]').click();
 });
 
-Cypress.Commands.add('assertPageUrl', (pageUrl) => {
+Cypress.Commands.add(tPageUrl', (pageUrl) => {
   cy.url().should('be.equal', pageUrl);
 });
 
-Cypress.Commands.add('asserTheUsernameIsVisible', () => {
+Cypommands.add('asserTheUsernameIsVisible', () => {
   cy.get('[data-test="username"]')
     .should('be.visible');
 });

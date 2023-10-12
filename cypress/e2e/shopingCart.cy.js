@@ -1,6 +1,6 @@
 import { faker } from '@faker-js/faker';
 
-const completedOrderText = 'Thank you for your order!';
+const completedOrderText = 'Thank you for y
 
 describe('User should', () => {
   beforeEach('Setting cookies', () => {
@@ -9,18 +9,18 @@ describe('User should', () => {
     cy.clearLocalStorage();
   });
 
-  it('be able to add multiple items to cart', () => {
+  it('be able tple items to cart', () => {
     cy.AddItemsToCart(2).as('itemsDetails');
 
     cy.asserTooltipItemsNumber('@itemsDetails');
   });
 
   it('be proceed to checkout with the correct number and titles of items', () => {
-    cy.AddItemsToCart(2).as('itemsDetails');
+    cy.AddItemsToCart(emsDetails');
 
     cy.clickTheShoppingCartIcon();
 
-    cy.assertTheNumberOfItemsInCart('@itemsDetails');
+    cy.assertTheNuOfItemsInCart('@itemsDetails');
 
     cy.assertItemsTitle('@itemsDetails');
   });
